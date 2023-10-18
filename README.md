@@ -1,31 +1,32 @@
 # projeto-fetch-github-api
-Este simples aplicativo da web permite que você pesquise perfis de usuários do GitHub pelo nome de usuário. Ele recupera informações de usuário e repositórios da API do GitHub e exibe os dados de maneira amigável.
 
-## Início
+Este é um projeto que interage com a API do GitHub para buscar informações de um usuário e seus repositórios. Ele consiste em várias partes, incluindo módulos JavaScript para a API, a lógica de busca e renderização de informações, bem como a interface de usuário.
 
-### Pré-requisitos
+## Funcionalidades
 
-Certifique-se de ter um navegador da web moderno que suporte JavaScript.
+- Busca e exibição de informações de um usuário do GitHub.
+- Exibição dos repositórios do usuário, caso existam.
+- Tratamento de caso em que o usuário não é encontrado na API do GitHub.
 
-### Instalação
+## Estrutura do Código
 
-1. Clone este repositório em sua máquina local ou faça o download do arquivo ZIP.
-2. Abra o arquivo `index.html` em seu navegador da web.
+O código do projeto está organizado em módulos e funções para manter a clareza e a manutenibilidade. Aqui está uma breve visão geral dos principais módulos:
 
-## Uso
+- `variables.js`: Define variáveis de configuração, como a URL base da API do GitHub.
+- `services/user.js`: Contém funções para buscar informações do usuário na API.
+- `services/repositories.js`: Contém funções para buscar os repositórios do usuário na API.
+- `objects/user.js`: Define um objeto para armazenar informações do usuário.
+- `objects/screen.js`: Define um objeto para renderizar informações na tela.
 
-1. Insira o nome de usuário do GitHub que você deseja pesquisar no campo de entrada.
-2. Clique no botão "Pesquisar" ou pressione a tecla "Enter".
-3. As informações de perfil do usuário e uma lista de seus repositórios serão exibidas na página.
+## Como Usar
 
-## Explicação do Código
+Para utilizar o projeto, siga estas etapas:
 
-A funcionalidade principal deste aplicativo é impulsionada pelo código JavaScript. Aqui está uma breve explicação dos principais componentes:
+1. Clone o repositório para o seu ambiente de desenvolvimento.
+2. Configure as variáveis em `variables.js`, se necessário.
+3. Abra o arquivo HTML principal em seu navegador.
+4. Insira o nome de usuário do GitHub e clique no botão de pesquisa ou pressione Enter.
 
-- O ouvinte de evento `click` no botão de pesquisa e o ouvinte de evento `keyup` no campo de entrada permitem que os usuários pesquisem perfis do GitHub, clicando no botão ou pressionando a tecla Enter.
+## Contribuições
 
-- A função `getUserProfile` busca os dados do usuário na API do GitHub e os exibe na página, incluindo o nome do usuário, biografia e avatar.
-
-- A função `getUserRepositories` busca os repositórios do usuário e os exibe em uma lista.
-
-- Os dados do usuário e dos repositórios são buscados na API do GitHub usando `fetch` e, em seguida, processados e exibidos na página.
+Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas, sugestões ou enviar solicitações de pull para melhorar o projeto.❤️
